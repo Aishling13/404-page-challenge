@@ -1,0 +1,99 @@
+/* || General styles */
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+.App-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem 0 5rem;
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* || Header */
+.App-header {
+    font-family: 'Inconsolata', monospace;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.App-main {
+    display: flex;
+    gap: 6rem;
+    flex-grow: 1;
+    padding-top: 6rem;
+}
+
+.content-container {
+    display: flex;  
+    flex-direction: column; 
+    gap: 25px;
+}
+
+#title {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#sub-title {
+    font-size: 1.8rem;
+    max-width: 17em;
+}
+
+.scarecrow-image {
+    max-height: 450px;
+    max-width: 540px;
+}
+
+button {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #333333;
+    color: white;
+    padding: 2rem 4rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #BDBDBD;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 70%;
+    }
+    
+    .App-main {
+        flex-direction: column;
+        padding: 50px 0;
+        align-items: center;
+    }
+
+    #sub-title {
+        max-width: 25em;
+    }
+
+    .scarecrow-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 50%;
+    }
+    
+}
